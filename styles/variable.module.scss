@@ -1,0 +1,52 @@
+@import "mixins";
+
+
+$color-primary: red;
+
+.title {
+  color: $color-primary;
+
+  a {
+    background-color: green;
+  }
+}
+
+@include mobile() {
+  .title {
+    background-color: gray;
+  }
+
+  .startInput {
+    background-color: red;
+  }
+  .startBtn {
+    background-color: gold;
+  }
+}
+
+@include tablet() {
+  .title {
+    background-color: gold;
+  }
+
+  .startInput {
+    background-color: green;
+  }
+  .startBtn {
+    background-color: gray;
+  }
+}
+
+@include desktop() {
+  .title {
+    background-color: blue;
+  }
+
+  .startInput {
+    background-color: blueviolet;
+  }
+
+  .startBtn {
+    background-color: red;
+  }
+}
